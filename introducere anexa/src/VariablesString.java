@@ -74,12 +74,17 @@ public static void main (String[] args)
     String text1 = "Hello ";
     String text2 = "World!";
     int lungime1 = text1.length();
+    System.out.println (text1);
+    System.out.println (text2);
     int lungime2 = text2.length();
     System.out.println ("Lunginmea textului "+ text1 + " este: "+ lungime1);
     System.out.println ("Lunginmea textului "+ text2 + " este: "+ lungime2);
     System.out.println (text1.concat(text2));
-    String text3 = "oglinda";
-    System.out.println (text3.split("i"));
+    String text3 = text1.concat(text2);
+    for (String retval: text3.split(" ")) 
+    {
+        System.out.println(retval);
+     }
  
   }
   
